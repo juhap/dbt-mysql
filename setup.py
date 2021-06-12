@@ -4,7 +4,6 @@ import sys
 
 from setuptools import setup
 
-
 if sys.version_info < (3, 6, 2):
     print('Error: dbt-mysql does not support this version of Python.')
     print('Please upgrade to Python 3.6.2 or higher.')
@@ -17,7 +16,7 @@ with open(os.path.join(this_directory, 'README.md')) as f:
 
 
 package_name = "dbt-mysql"
-package_version = "0.19.0rc1"
+package_version = "0.19.1"
 description = """The MySQL adapter plugin for dbt (data build tool)"""
 
 
@@ -53,7 +52,7 @@ setup(
         ],
     },
     install_requires=[
-        "dbt-core==0.19.0rc1",
+        "dbt-core==0.19.1",
         "mysql-connector-python~=8.0.22",
     ],
     classifiers=[
